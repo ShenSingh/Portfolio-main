@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 03</title>
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 225vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .circle {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 0 0 20px gray;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .inner-circle {
+            position: absolute;
+            width: 180px;
+            aspect-ratio: 1/1;
+            background-color: purple;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            z-index: -1;
+        }
+
+        #inner-1 {
+            top: 390px;
+        }
+
+        #inner-2 {
+            top: 990px;
+            background-color: deepskyblue;
+        }
+
+        #inner-3 {
+            top: 1590px;
+            background-color: coral;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="circle">
+    </div>
+
+    <div id="inner-1" class="inner-circle">
+        <span>Hello</span>
+    </div>
+
+    <div id="inner-2" class="inner-circle">
+        <span>Welcome to</span>
+    </div>
+
+    <div id="inner-3" class="inner-circle">
+        <span>Institute of Software Engineering</span>
+    </div>
+
+</body>
+</html>

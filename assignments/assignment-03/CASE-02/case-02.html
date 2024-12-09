@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case-02</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom : 2px solid black;
+        }
+
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .navigation{
+            margin-right: 50px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navigation ul li {
+            margin: 0 15px;
+        }
+
+        .navigation ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navigation ul li a:hover {
+            background-color: #555;
+            border-radius: 4px;
+            color: #dddddd;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+        }
+
+        aside {
+            width: 200px;
+            background-color: rebeccapurple;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: auto;
+            margin-right: 20px;
+            position: relative;
+            margin-left: 0;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        aside ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        aside ul li a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+
+        .stitch-queue {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 300px;
+            width: calc(100% / 3);
+        }
+
+        .stitch-queue li {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .stitch-queue img {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: black 1px solid;
+
+        }
+
+        article {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            font-family: "Karla", system-ui;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        footer {
+            font-family: 'Roboto', sans-serif;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            top: 0;
+            left: 0;
+        }
+
+        .fas{
+            color: white;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <img src="../assets/images/ijse.png">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main Content Section-->
+    <main>
+        <!--Aside Section-->
+        <aside>
+            <ul>
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-cogs"></i>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="#">Contacts</a>
+                </li>
+                <li>
+                    <i class="fas fa-info"></i>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!--Content Section-->
+        <article>
+            <figure>
+                <div>
+                    <ul class="stitch-queue">
+                        <li><img src="../assets/images/gif/monkey.gif" alt="stitch"></li>
+                        <li><img src="../assets/images/gif/monkey.gif" alt="stitch"></li>
+                        <li><img src="../assets/images/gif/monkey.gif" alt="stitch"></li>
+                    </ul>
+                </div>
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore dolores eos, facilis iusto mollitia quas sequi voluptate. Accusamus autem blanditiis deleniti dolore est eveniet fugiat neque, pariatur quaerat qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis eius et exercitationem impedit iure nulla perspiciatis repellat voluptas voluptate! Accusantium commodi cumque debitis doloremque iusto quia quisquam temporibus totam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, amet dignissimos eos excepturi expedita ipsum molestiae natus, nihil quam quasi quidem quis rem sed similique tempore unde veniam? Officiis, quis.
+                lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum.</p>
+
+
+            <br>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore dolores eos, facilis iusto mollitia quas sequi voluptate. Accusamus autem blanditiis deleniti dolore est eveniet fugiat neque, pariatur quaerat qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis eius et exercitationem impedit iure nulla perspiciatis repellat voluptas voluptate! Accusantium commodi cumque debitis doloremque iusto quia quisquam temporibus totam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, amet dignissimos eos excepturi expedita ipsum molestiae natus, nihil quam quasi quidem quis rem sed similique tempore unde veniam? Officiis, quis.
+                lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum.</p>
+
+
+            <br>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore dolores eos, facilis iusto mollitia quas sequi voluptate. Accusamus autem blanditiis deleniti dolore est eveniet fugiat neque, pariatur quaerat qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis eius et exercitationem impedit iure nulla perspiciatis repellat voluptas voluptate! Accusantium commodi cumque debitis doloremque iusto quia quisquam temporibus totam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, amet dignissimos eos excepturi expedita ipsum molestiae natus, nihil quam quasi quidem quis rem sed similique tempore unde veniam? Officiis, quis.
+                lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum.</p>
+
+
+            <br>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore dolores eos, facilis iusto mollitia quas sequi voluptate. Accusamus autem blanditiis deleniti dolore est eveniet fugiat neque, pariatur quaerat qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis eius et exercitationem impedit iure nulla perspiciatis repellat voluptas voluptate! Accusantium commodi cumque debitis doloremque iusto quia quisquam temporibus totam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, amet dignissimos eos excepturi expedita ipsum molestiae natus, nihil quam quasi quidem quis rem sed similique tempore unde veniam? Officiis, quis.
+                lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum.</p>
+
+
+            <br>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore dolores eos, facilis iusto mollitia quas sequi voluptate. Accusamus autem blanditiis deleniti dolore est eveniet fugiat neque, pariatur quaerat qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis eius et exercitationem impedit iure nulla perspiciatis repellat voluptas voluptate! Accusantium commodi cumque debitis doloremque iusto quia quisquam temporibus totam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, amet dignissimos eos excepturi expedita ipsum molestiae natus, nihil quam quasi quidem quis rem sed similique tempore unde veniam? Officiis, quis.
+                lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum.</p>
+
+
+            <br>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore dolores eos, facilis iusto mollitia quas sequi voluptate. Accusamus autem blanditiis deleniti dolore est eveniet fugiat neque, pariatur quaerat qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis eius et exercitationem impedit iure nulla perspiciatis repellat voluptas voluptate! Accusantium commodi cumque debitis doloremque iusto quia quisquam temporibus totam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, amet dignissimos eos excepturi expedita ipsum molestiae natus, nihil quam quasi quidem quis rem sed similique tempore unde veniam? Officiis, quis.
+                lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur atque autem, consectetur consequuntur cumque delectus doloremque doloribus ea eius eligendi enim error est eum ex explicabo facere fugiat harum id illum impedit in incidunt ipsa iure iusto laborum laudantium magnam maxime minima molestias natus nemo nesciunt nihil nisi nobis non nostrum numquam obcaecati odio officiis omnis optio pariatur perspiciatis placeat porro possimus praesentium quae quam quas quia quidem quisquam quo ratione recusandae rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate voluptatem voluptatum.</p>
+
+        </article>
+
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <p>&copy; 2021 IJSE. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

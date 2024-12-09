@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>activity-01</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Karla', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .icon{
+            width: 250px;
+            height: 60px;
+            background: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 20px;
+            border-radius: 10px;
+
+            margin-left: -220px;
+
+            transition: transform 0.5s ease, margin-left 0.5s ease;
+        }
+
+        .fas{
+            color: white;
+            font-size: 40px;
+        }
+
+        .icon:hover{
+            margin-left: -20px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="icon">
+            <a href="#">User</a>
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="icon">
+            <a href="#">Settings</a>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="icon">
+            <a href="#">Logout</a>
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+        <div class="icon">
+            <a href="#">Cart</a>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Services</title>
+
+  <meta name="description" content="Welcome to the homepage of Warushika Wijayarathna, a full-stack developer based in Sri Lanka. Crafting digital excellence with innovative design and cutting-edge technology.">
+
+    <meta name="keywords" content="Warushika Wijayarathna, Full-stack Developer, Sri Lanka, Web Development, Digital Solutions, Innovative Design">
+
+    <meta name="author" content="Warushika Wijayarathna">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Warushika Wijayarathna - Full-stack Developer">
+    <meta property="og:description" content="Crafting digital excellence with innovative design and cutting-edge technology. Based in Sri Lanka.">
+    <meta property="og:image" content="images/banner.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://warushikawijayarathna.com">
+    <meta property="og:site_name" content="Warushika Wijayarathna">
+    <meta property="og:locale" content="en_US">
+
+  <link rel="icon" href="images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- normalize.css-->
+  <link rel="stylesheet" href="style/normalize.css">
+
+  <!--AOS Library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body id="body-common" class="services">
+  <!--Services Page-->
+  <!--Header Section-->
+  <header class="header">
+    <!--Logo Section-->
+    <div class="logo-container">
+      <div class="img">
+        <picture>
+          <source srcset="images/logo.webp" type="image/webp">
+          <source srcset="images/logo.jpg" type="image/jpeg">
+          <img class="logo-img" src="images/logo.png" alt="logo">
+        </picture>
+      </div>
+
+      <!-- Arrow Icon -->
+      <div class="menu-toggle" onclick="toggleMenu()">▼</div>
+
+      <div class="name">
+        <h3 class="logo-name">arushika.</h3>
+      </div>
+
+
+    </div>
+
+    <!--Navigation Section-->
+    <nav class="navigation">
+      <ul>
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="about.html">About</a></li>
+        <li class="nav active">
+          <a href="#">Services</a>
+        </li>
+        <li class="nav"><a href="blog.html">Blog</a></li>
+        <li class="nav"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Main Section1-->
+  <main class="context-section">
+
+    <div class="quote-grid">
+      <!--Qoute section-->
+      <div class="quote">
+        <p id="quote-text">"Driven by innovation and dedication, I tackle every project with a commitment to excellence and a relentless pursuit of quality."</p>
+      </div>
+
+      <!--Topic Section-->
+      <div class="topic">
+        <div class="topic-heading-box">
+          <h2 class="topic-heading">Services</h2>
+          <h2 class="topic-heading">Services</h2>
+        </div>
+        <div class="context-heading-box">
+          <h1 class="context-heading">WHAT TO OFFER</h1>
+          <div class="context-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Service Card Section-->
+    <section class="service-cards">
+      <div class="service" data-aos="fade-right">
+        <h3>Business Consultation</h3>
+        <img id="service1-img" src="images/service1.png" alt="service1" width="300" height="200">
+      </div>
+
+      <div class="service" data-aos="fade-right">
+        <h3>UI/UX<br>Design</h3>
+        <img id="service2-img" src="images/service2.png" alt="service2" width="300" height="200">
+      </div>
+
+      <div class="service" data-aos="fade-right">
+        <h3>Web App Development</h3>
+        <img id="service3-img" src="images/service3.png" alt="service3" width="300" height="200">
+      </div>
+
+      <div class="service" data-aos="fade-right">
+        <h3>Desktop<br>Application</h3>
+        <img id="service4-img" src="images/service4.png" alt="service4" width="300" height="200">
+      </div>
+
+      <div class="service" data-aos="fade-right">
+        <h3>Maintenance and Support</h3>
+        <img id="service5-img" src="images/service5.png" alt="service5" width="300" height="200">
+      </div>
+    </section>
+  </main>
+
+  <!--Main Section2-->
+  <main class="skills-achievements">
+    <!--Count Bar-->
+    <div class="count-bar">
+      <div class="count">
+        <h3>1+</h3>
+        <p id="count1-data">Awards</p>
+      </div>
+
+      <div class="count">
+        <h3>2+</h3>
+        <p id="count2-data">Years of Experience</p>
+      </div>
+
+      <div class="count">
+        <h3>10+</h3>
+        <p id="count3-data">Projects</p>
+      </div>
+
+      <div class="count">
+        <h3>50+</h3>
+        <p id="count4-data">Happy Clients</p>
+      </div>
+    </div>
+    <!--Project Cards Section-->
+    <article class="article">
+      <div class="project-grid">
+        <div class="project-container">
+          <div class="project-cards">
+            <div class="project-card" data-aos="fade-up">
+              <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt debitis sit provident, eligendi voluptatem quia sapiente minus aut.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-down">
+              <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt debitis sit provident, eligendi voluptatem quia sapiente minus aut.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+              <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt debitis sit provident, eligendi voluptatem quia sapiente minus aut.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-down">
+              <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt debitis sit provident, eligendi voluptatem quia sapiente minus aut.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Work ethics Section-->
+        <div class="work-ethics">
+          <div class="context-heading-box">
+            <div class="context-bar"></div>
+            <h1 class="context-heading">MY WORK</h1>
+          </div>
+          <div class="work-para">
+            <p>"Transforming your ideas into reality with innovative design and development. Let's collaborate to create something truly amazing together!"</p>
+          </div>
+          <div>
+            <input class="input-button" type="button" name="hire" value="Hire Me" href="contact.html">
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!--Main Section3-->
+  <main id="assignments">
+    <h2>| Assignments</h2>
+    <div id="flip">
+      <div class="flip-card-container" data-aos="flip-right" style="--hue: 24">
+        <div class="flip-card">
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="assigmment">
+              <figcaption>UI/UX, Sitemap and Wireframe</figcaption>
+            </figure>
+            <ul>
+              <li><a href="https://www.gloomaps.com/7bstcpfl94" target="_blank">Site-Map</a></li>
+              <li><a href="https://drive.google.com/file/d/1Q-PVuutHNaPwzzctSypyd9xt6e388wjZ/view" target="_blank">Wireframe</a></li>
+              <li><a href="https://www.figma.com/design/1B1R7wAiJxaNBcXZhZkeej/Portfolio?node-id=0-1&t=BCEWW8LKmL0a3Fx1-0" target="_blank">Figma</a></li>
+            </ul>
+          </div>
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Brohm Lake">
+            </figure>
+            <button>Assignment 01</button>
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card-container" data-aos="flip-right" style="--hue: 24">
+        <div class="flip-card">
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Image 2">
+              <figcaption>HTML Structure</figcaption>
+            </figure>
+            <ul>
+              <li><a href="https://github.com/Warushika-Wijayarathna/Portfolio" target="_blank">Structure</a></li>
+              <li><a href="https://github.com/Warushika-Wijayarathna/Portfolio" target="_blank"><i class="fa-brands fa-github github-icon"></i></a></li>            </ul>
+          </div>
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="image-2">
+            </figure>
+            <button>Assignment 02</button>
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card-container" data-aos="flip-right" style="--hue: 24">
+        <div class="flip-card">
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="assignment">
+              <figcaption>Usage of CSS - 01 </figcaption>
+            </figure>
+            <ul>
+              <li><a href="assignments/assignment-03/CASE-01/case-01.html" target="_blank">Case 01</a></li>
+              <li><a href="assignments/assignment-03/CASE-02/case-02.html" target="_blank">Case 02</a></li>
+              <li><a href="assignments/assignment-03/CASE-03/case-03.html" target="_blank">Case 03</a></li>
+              <li><a href="assignments/assignment-03/CASE-04/case-04.html" target="_blank">Case 04</a></li>
+              <li><a href="assignments/assignment-03/CASE-05/case-05.html" target="_blank">Case 05</a></li>
+              <li><a href="assignments/assignment-03/CASE-06/case-06.html" target="_blank">Case 06</a></li>
+              <li><a href="https://github.com/Warushika-Wijayarathna/CSS-Positions.git" target="_blank"><i class="fa-brands fa-github github-icon"></i></a></li>            </ul>
+
+            </ul>
+          </div>
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Brohm Lake">
+            </figure>
+            <button>Assignment 03</button>
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="d esign design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card-container" data-aos="flip-right" style="--hue: 24">
+        <div class="flip-card">
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Image 3">
+              <figcaption>Usage of CSS - 02 </figcaption>
+            </figure>
+            <ul>
+              <li><a href="assignments/assignment-04/CASE-01/case-01.html" target="_blank">Case 01</a></li>
+              <li><a href="assignments/assignment-04/CASE-02/case-02.html" target="_blank">Case 02</a></li>
+              <li><a href="assignments/assignment-04/CASE-03/case-03.html" target="_blank">Case 03</a></li>
+              <li><a href="assignments/assignment-04/CASE-04/case-04.html" target="_blank">Case 04</a></li>
+              <li><a href="assignments/assignment-04/CASE-05/case-05.html" target="_blank">Case 05</a></li>
+              <li><a href="assignments/assignment-04/CASE-06/index.html" target="_blank">Case 06</a></li>
+              <li><a href="https://github.com/Warushika-Wijayarathna/Assignment-04.git" target="_blank"><i class="fa-brands fa-github github-icon"></i></a></li>            </ul>
+
+            </ul>
+          </div>
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Image 3">
+            </figure>
+            <button>Assignment 04</button>
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card-container" data-aos="flip-right" style="--hue: 24">
+        <div class="flip-card">
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Image 4">
+              <figcaption>Usage of CSS - 03 </figcaption>
+            </figure>
+            <ul>
+              <li><a href="https://warushika-wijayarathna.vercel.app/index.html" target="_blank">Portfolio</a></li>
+              <li><a href="https://github.com/Warushika-Wijayarathna/Portfolio" target="_blank"><i class="fa-brands fa-github github-icon"></i></a></li>            </ul>
+            </ul>
+          </div>
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Image 4">
+            </figure>
+            <button>Assignment 05</button>
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card-container" data-aos="flip-right" style="--hue: 24">
+        <div class="flip-card">
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Image 5">
+              <figcaption>CSS Framework Usage</figcaption>
+            </figure>
+            <ul>
+              <li><a href="https://sugar-crumbs-glsd.vercel.app/" target="_blank">Sugar Crumbs</a></li>
+              <li><a href="https://github.com/Warushika-Wijayarathna/Sugar-Crumbs.git" target="_blank"><i class="fa-brands fa-github github-icon"></i></a></li>            </ul>
+            </ul>
+          </div>
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img src="images/assignment.png" alt="Image 5">
+            </figure>
+            <button>Assignment 06</button>
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!--Footer Section-->
+  <footer class="footer">
+
+    <!--Social Media Links Section-->
+    <div class="social-links-container">
+      <div class="seperation-line"></div>
+      <!--Social Media Links Section-->
+      <div class="social-links">
+        <a href="https://www.facebook.com/AshaniWarushika" rel="noopener noreferrer" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/warushika_w/?hl=en" rel="noopener noreferrer" target="_blank"><img src="images/instagram.png" alt="twitter"></a>
+        <a href="https://github.com/Warushika-Wijayarathna" rel="noopener noreferrer" target="_blank"><img src="images/github.png" alt="linkedin"></a>
+        <a href="www.linkedin.com/in/warushika-wijayarathna-679642273" target="_blank"><img src="images/linkedin.png" alt="instagram"></a>
+      </div>
+
+      <div class="seperation-line"></div>
+    </div>
+
+    <div class="grid-section">
+      <!--Quotes and Rights Section-->
+      <div id="quotes-rights">
+        <p id="quotes">"Transforming your ideas into reality with innovative design and development. Let's collaborate to create something truly amazing together!"</p>
+        <h1>Let's talk</h1>
+        <p id="rights">© PrimePlus@ 2024. All Rights Reserved.</p>
+      </div>
+
+      <div class="seperation-line"></div>
+
+      <!--Quick Links-->
+      <div class="quick-links">
+        <h4 id="quick-links-heading">Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!--My Services-->
+      <div class="my-services">
+        <h4 id="my-services-heading">My Services</h4>
+        <ul>
+          <li>Business Consultation</li>
+          <li>UI/UX Design</li>
+          <li>Web Design</li>
+          <li>Maintenance and Support</li>
+        </ul>
+      </div>
+
+      <!--Logo and Contact Section-->
+      <div id="logo-contact">
+        <!--Logo Container Section-->
+        <div class="logo-container">
+          <img class="logo-img" src="images/logo.png" alt="logo">
+          <h3 class="logo-name">arushika.</h3>
+        </div>
+
+
+        <!--PO BOX Section-->
+        <div class="po-box">
+          <h4>PO BOX</h4>
+          <address>
+            No. 299,<br>
+            Ranpokunagama,<br>
+            Pokunuwita.<br>
+            12404<br>
+            SL
+          </address>
+        </div>
+
+        <!--Email-->
+        <p class="email">warushikawijayarathna<span>@gmail.com</span></p>
+      </div>
+    </div>
+    <div class="seperation-line" id="last-line"></div>
+    <div class="mini-footer">
+      <h4 class="developer-name">Developed by <span class="nickname">Ashii</span></h4>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

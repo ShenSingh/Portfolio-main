@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case-01</title>
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .quadrant {
+            position: relative;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quadrant.red { background-color: red; }
+        .quadrant.green { background-color: green; }
+        .quadrant.orange { background-color: orange; }
+        .quadrant.pink { background-color: deeppink; }
+
+        .circle {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .square {
+            width: 45%;
+            height: 45%;
+            background-color: red;
+        }
+
+        .center-square {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-square .circle {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .left-top-corner-quarter-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius:0 0 100% 0  ;
+        }
+
+        .right-top-corner-quarter-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 0 0 0 100%;
+        }
+
+        .left-bottom-corner-quarter-circle {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 0 100% 0 0;
+        }
+
+
+        .right-bottom-corner-quarter-circle {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100% 0 0 0;
+        }
+
+        .left-top-corner-quarter-circle-in {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius:0 0 100% 0  ;
+        }
+
+        .right-top-corner-quarter-circle-in {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 0 0 100%;
+        }
+
+        .left-bottom-corner-quarter-circle-in {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0 100% 0 0;
+        }
+
+        .right-bottom-corner-quarter-circle-in {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 100% 0 0 0;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="quadrant red">
+        <div class="right-top-corner-quarter-circle-in"></div>
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="quadrant green">
+        <div class="left-top-corner-quarter-circle-in"></div>
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="quadrant orange">
+        <div class="right-bottom-corner-quarter-circle-in"></div>
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="quadrant pink">
+        <div class="left-bottom-corner-quarter-circle-in"></div>
+        <div class="circle">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="center-square">
+        <div class="circle"></div>
+    </div>
+
+    <div class="left-top-corner-quarter-circle"></div>
+    <div class="right-top-corner-quarter-circle"></div>
+    <div class="left-bottom-corner-quarter-circle"></div>
+    <div class="right-bottom-corner-quarter-circle"></div>
+
+</div>
+</body>
+</html>
+

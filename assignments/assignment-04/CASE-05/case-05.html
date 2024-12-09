@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case-08</title>
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <style>
+        @keyframes slidy {
+            0% { left: 0%; }
+            20% { left: 0%; }
+            25% { left: -100%; }
+            45% { left: -100%; }
+            50% { left: -200%; }
+            70% { left: -200%; }
+            75% { left: -300%; }
+            95% { left: -300%; }
+            100% { left: -300%; }
+        }
+
+        body { margin: 0; }
+        div.slider { overflow: hidden; }
+        div.slider figure img { width: 20%; float: left; }
+        div.slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: slidy 10s infinite alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slider">
+    <figure>
+        <img src="../assets/images/animation_slide/slide1.jpeg" alt="image1">
+        <img src="../assets/images/animation_slide/slide2.jpeg" alt="image2">
+        <img src="../assets/images/animation_slide/slide3.jpeg" alt="image3">
+        <img src="../assets/images/animation_slide/slide4.jpeg" alt="image4">
+    </figure>
+</div>
+</body>
+</html>
