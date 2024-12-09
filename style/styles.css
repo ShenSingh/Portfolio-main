@@ -694,7 +694,7 @@ address {
 .description-tbl {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 25px;
     border: 1px solid #FF4900;
     border-radius: 20px;
     padding: 10px;
@@ -729,18 +729,19 @@ address {
     display: grid;
     grid-template-columns: 64% 35%;
     gap: 20px;
-    
+
     margin-top: 50px;
     /* background-color: #770633; */
 }
 
 .description-bio {
-    margin-top: 1px !important;
-    background-color: #770633;
+    margin-top: -80px !important;
+    /* background-color: #770633; */
 }
 
 .description-figure {
     position: relative;
+    margin-top: -130px;
 }
 
 .description-gallery figure div:nth-child(1) {
@@ -811,7 +812,7 @@ address {
     display: grid;
     grid-template-columns: 50% 50%;
     color: #FFFFFF;
-    margin-top: 50px;
+    margin-top: 0px !important;
     padding: 0;
 }
 
